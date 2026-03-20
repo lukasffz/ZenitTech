@@ -1,0 +1,313 @@
+/*
+Onde Aplicar (Checklist Visual)
+Estrutura de Fundo: Aplique o #050505 em todo o body do site.
+
+Cards de Produto: Crie um gradiente linear de cima para baixo: linear-gradient(180deg, #161616 0%, #0D0D0D 100%).
+
+Navbar: Use o #0D0D0D com uma leve transparência (rgba(13, 13, 13, 0.8)) para um efeito de vidro escuro profissional.
+
+Botões (CTA): Fundo em #D31219 com texto em #FFFFFF. Ao passar o mouse (hover), aplique um leve brilho (box-shadow) da mesma cor.
+
+Tipografia: Use o #E0E0E0 para todos os parágrafos e títulos, garantindo legibilidade técnica.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: #E0E0E0;
+}
+header {
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    border-bottom: 2px solid #222222;
+    background-color: #0d0d0dcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1A1A1A;
+}
+header a{
+    text-decoration: none;
+}
+.heroTitle {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25rem;
+    font-size: 20px;
+}
+.heroTitle h1 {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff000099;
+}
+.ctaContact {
+    display: flex;
+    gap: 1rem;
+}
+.ctaButton {
+    background: Linear-gradient(180deg, #161616 0%, #0D0D0D 100%);
+    color: #E0E0E0;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ff0000;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+.ctaButton:hover {
+    transform: translateY(-10px);
+    background: #ff0000cc;
+    box-shadow: 5px 5px 10px #ff0000;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero-zenit {
+    position: relative;
+    height: 90vh;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../imagens/fundoBanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+}
+.hero-overlay { /*apenas para não cansar vista*/
+    position: absolute;
+    /*top e left pra garantir q a camada escura seja alinhada desde cima e ao lado esquerdo*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* camada escura */
+    z-index: 1; /* controla profundidade - deixa a camada escura acima da imagem de fundo */
+}
+.hero-content {
+    position: relative;
+    z-index: 2; /* controla profundidade - deixa o texto acima da camada escura da hero overlay */
+    text-align: center;
+    padding: 0 20px;
+}
+.hero-headline {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 4rem); /*deixa responsivo*/
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+.hero-headline span {
+    color: #ff0000;
+    text-shadow: 0 0 15px #ff000099;
+}
+.hero-tagline {
+    color: #e0e0e0;
+    font-size: clamp(1rem, 2vw, 1.3rem); /*deixa responsivo*/
+    margin-bottom: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.hero-button { /*com tag <a>*/
+    display: inline-block;
+    padding: 15px 40px;
+    background: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid #ff0000;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #ff00004d;
+}
+.hero-button:hover {
+    background: #ff0000;
+    box-shadow: 0 0 25px #ff0000cc;
+    transform: translateY(-3px);
+}
+body {
+    background-color: #0B0B0B;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#products, #contact, .hero-zenit {
+    border-bottom: 1px solid #222222;
+}
+.sectionTitle {
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding: 2rem;
+    margin-bottom: -2rem;
+}
+.sectionTitle #tech {
+    color: #E0E0E0;
+}
+#products {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 620px;
+}
+.productsContainer {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.productsContainer a {
+    text-decoration: none;
+}
+.boxXdesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.5s ease;
+}
+.productsBox {
+    width: 250px;
+    height: 20vh;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    transition: background-image 0.5s ease, box-shadow 0.5s ease;
+    background-size: cover; 
+    background-position: center;
+}
+/*Usando variáveis para melhorar na imagem e no hover*/
+.tecladoZenit .productsBox {
+    --product-image-base: url('../imagens/imagensProdutos/tecladoZenit.png');
+}
+.mouseZenit .productsBox {
+    --product-image-base: url('../imagens/imagensProdutos/mouseZenit.png');
+}
+.lightbarZenit .productsBox {
+    --product-image-base: url('../imagens/imagensProdutos/lightbarZenit.png');
+}
+.headsetZenit .productsBox {
+    --product-image-base: url('../imagens/imagensProdutos/headsetZenit.png');
+}
+.hubZenit .productsBox {
+    --product-image-base: url('../imagens/imagensProdutos/hubUsbZenit.png');
+}
+.mousepadZenit .productsBox {
+    --product-image-base: url('../imagens/imagensProdutos/mousepadZenit.png');
+}
+.productsBox {
+    background-image: var(--product-image-base);
+}
+.boxXdesc:hover .productsBox {
+    background-image: var(--product-image-hover);
+}
+.tecladoZenit {
+    --product-image-hover: url('../imagens/imagensProdutos/tecladoBarebone.png');
+}
+.mouseZenit {
+    --product-image-hover: url('../imagens/imagensProdutos/mouseZenit2.png');
+}
+.lightbarZenit {
+    --product-image-hover: url('../imagens/imagensProdutos/lightbarZenit2.png');
+}
+.headsetZenit {
+    --product-image-hover: url('../imagens/imagensProdutos/headsetZenit2.png');
+}
+.hubZenit {
+    --product-image-hover: url('../imagens/imagensProdutos/hubUsbZenit2.png');
+}
+.mousepadZenit {
+    --product-image-hover: url('../imagens/imagensProdutos/mousepadZenit2.png');
+}
+.boxXdesc:hover {
+    transform: translateY(-10px);
+}
+.boxXdesc:hover .productsBox {
+    box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.7);
+}
+.productsDescription {
+    color: #E0E0E0;
+}
+#contact {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+.contactForm {
+    border: 1px solid #ff0000;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #161616 0%, #0D0D0D 100%);
+    width: 500px;
+    height: 520px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha label e input à esquerda */
+    gap: 5px;
+}
+.contactForm input, textarea {
+    width: 400px;
+    height: 35px;
+    background: linear-gradient(180deg, #161616 0%, #0D0D0D 100%);
+    border-radius: 10px;
+    border: 1px solid #ff0000;
+    outline: none;
+}
+textarea {
+    height: 120px;
+    resize: none;
+}
+.contactForm button {
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(180deg, #161616 0%, #0D0D0D 100%);
+    border-radius: 10px;
+    border: 1px solid #ff0000;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.contactForm button:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 10px #ff0000c0;
+    background: #ff0000cc;
+}
+footer {
+    background-color: #0d0d0dcc;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

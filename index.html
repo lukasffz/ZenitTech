@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Zenit Tech</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <div class="heroTitle">
+                <img src="./imagens/logoIcon.png" alt="Zenit" width="60px"><h1>Zenit <span style="color: #E0E0E0;">Tech</span></h1>
+            </div>
+        </a>
+        <div class="ctaContact">
+            <form action="#">
+                <button type="submit" class="ctaButton">
+                    Sobre
+                </button>
+            </form>
+            <form action="#contact">
+                <button type="submit" class="ctaButton">
+                    Contato
+                </button>
+            </form>
+            <form action="#">
+                <button type="submit" class="ctaButton">
+                    Pesquisa
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="hero-zenit">
+            <div class="hero-overlay"></div> <!-- Overlay = Sobreposição -->
+            <div class="hero-content">
+                <h1 class="hero-headline">Descubra o Ápice <br><span>do seu Setup</span></h1><!--titulo principal-->
+                <p class="hero-tagline">Tecnologia de Alta Performance para Entusiastas</p>
+                <a href="#products" class="hero-button">COMPRE JÁ</a>
+            </div>
+        </section>
+        <section id="products">
+            <div class="sectionTitle">
+                <h2>Produtos</h2>
+            </div>
+            <!--organizei os produtos em classes específicas e utilizei variáveis no CSS ( "--nome:valor" e chamando com "var(--nome)" ) para definir as imagens de fundo em cada .productsBox, aplicando uma regra de hover no contêiner pai para disparar simultaneamente a troca de posição, a sombra e a troca pra a segunda imagem.-->
+            <!-- quando cria/chama a classe com espaço no nome, são criadas/chamadas duas classes -->
+            <div class="productsContainer">
+                <a href="#" class="boxXdesc tecladoZenit"> <!--alterei pra tag <a> pra que seja clicavel e chame a pagina de compra-->
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Teclado Mecânico - Zenit</p>
+                    </div>
+                </a>
+                <a href="#" class="boxXdesc mouseZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Mouse Gamer - Zenit</p>
+                    </div>
+                </a>
+                <a href="#" class="boxXdesc lightbarZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Lightbar - Zenit</p>
+                    </div>
+                </a>
+            </div>
+            <div class="productsContainer">
+                <a href="#" class="boxXdesc headsetZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Headset - Zenit</p>
+                    </div>
+                </a>
+                <a href="#" class="boxXdesc hubZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Hub USB 10-em-1 - Zenit</p>
+                    </div>
+                </a>
+                <a href="#" class="boxXdesc mousepadZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Mousepad Vidro Temperado - Zenit</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contactForm">
+                <div class="sectionTitle">
+                    <h2>Contato</h2>
+                </div>
+                <form action="https://wa.me/5511999999999?text=Gostaria%20de%20mais%20informações" target="_blank">
+                    <div class="group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" placeholder="Digite seu Nome Completo" id="name" required>
+                    </div>
+                    <div class="group">
+                        <label for="emailForm">Email</label>
+                        <input type="email" placeholder="Informe seu Email" id="emailForm" required>
+                    </div>
+                    <div class="group">
+                        <label for="msgForm">Mensagem</label>
+                        <textarea id="msgForm" name="bio" maxlength="500" placeholder="Conte-nos um pouco sobre o que precisa..."></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footerImgCopy">
+            <img src="./imagens/logo.png" alt="ZenitTech" width="200px">
+        </section>
+    </footer>
+</body>
+</html>
