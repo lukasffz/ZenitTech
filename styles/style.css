@@ -1,14 +1,10 @@
 /*
-Onde Aplicar (Checklist Visual)
-Estrutura de Fundo: Aplique o #050505 em todo o body do site.
-
-Cards de Produto: Crie um gradiente linear de cima para baixo: linear-gradient(180deg, #161616 0%, #0D0D0D 100%).
-
-Navbar: Use o #0D0D0D com uma leve transparência (rgba(13, 13, 13, 0.8)) para um efeito de vidro escuro profissional.
-
-Botões (CTA): Fundo em #D31219 com texto em #FFFFFF. Ao passar o mouse (hover), aplique um leve brilho (box-shadow) da mesma cor.
-
-Tipografia: Use o #E0E0E0 para todos os parágrafos e títulos, garantindo legibilidade técnica.
+Checklist Visual
+Estrutura de Fundo: #0B0B0B em todo o body do site.
+Cards de Produto: linear-gradient(180deg, #161616 0%, #0D0D0D 100%).
+Navbar: #0d0d0dcc para um efeito de vidro escuro profissional.
+Botões (CTA): igual ao linear-gradient porém com #ff0000 no hover.
+Tipografia: #E0E0E0 para todos os parágrafos e títulos.
 */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 * {
@@ -20,6 +16,9 @@ Tipografia: Use o #E0E0E0 para todos os parágrafos e títulos, garantindo legib
     font-variation-settings:
         "wdth" 100;
     color: #E0E0E0;
+}
+body {
+    background-color: #0B0B0B;
 }
 header {
     position: relative;
@@ -137,9 +136,7 @@ html {
     box-shadow: 0 0 25px #ff0000cc;
     transform: translateY(-3px);
 }
-body {
-    background-color: #0B0B0B;
-}
+
 main {
     width: 100%;
     display: flex;
