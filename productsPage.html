@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleProducts.css">
+    <title>Produtos - Zenit Tech</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <div class="heroTitle">
+                <img src="./imagens/logoIcon.png" alt="Zenit" width="60px"><h1>Zenit <span style="color: #E0E0E0;">Tech</span></h1>
+            </div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#products">Zenit</a></li>
+                <li><a href="./index.html#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div><a href="#"><img src="./imagens/iconPesquisar.png" alt="Pesquisar" width="25px"></a></div>
+            <div><a href="./login.html"><img src="./imagens/iconUsuarioBranco.png" alt="Login" width="25px"></a></div>
+        </div>
+    </header>
+    <main>
+        <section id="products">
+            <div class="sectionTitle">
+                <h2>Produtos - ZENIT</h2>
+            </div>
+            <!--organizei os produtos em classes específicas e utilizei variáveis no CSS ( "--nome:valor" e chamando com "var(--nome)" ) para definir as imagens de fundo em cada .productsBox, aplicando uma regra de hover no contêiner pai para disparar simultaneamente a troca de posição, a sombra e a troca pra a segunda imagem.-->
+            <!-- quando cria/chama a classe com espaço no nome, são criadas/chamadas duas classes -->
+            <div class="productsContainer">
+                <a href="./descricaoProduto.html" class="boxXdesc tecladoZenit"> <!--alterei pra tag <a> pra que seja clicavel e chame a pagina de compra-->
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Teclado Mecânico - Zenit | R$15.99</p>
+                    </div>
+                </a>
+                <a href="./descricaoProduto.html" class="boxXdesc mouseZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Mouse Gamer - Zenit | R$15.99</p>
+                    </div>
+                </a>
+                <a href="./descricaoProduto.html" class="boxXdesc lightbarZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Lightbar - Zenit | R$15.99</p>
+                    </div>
+                </a>
+            </div>
+            <div class="productsContainer">
+                <a href="./descricaoProduto.html" class="boxXdesc headsetZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Headset - Zenit | R$15.99</p>
+                    </div>
+                </a>
+                <a href="./descricaoProduto.html" class="boxXdesc hubZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Hub USB 10-em-1 - Zenit | R$15.99</p>
+                    </div>
+                </a>
+                <a href="./descricaoProduto.html" class="boxXdesc mousepadZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Mousepad - Zenit | R$15.99</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="products2">
+            <div class="sectionTitle">
+                <h2>Produtos - EXTRA</h2>
+            </div>
+            <div class="productsContainer">
+                <a href="./descricaoProduto.html" class="boxXdesc tecladoZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Teclado Mecânico - Zenit | R$15.99</p>
+                    </div>
+                </a>
+                <a href="./descricaoProduto.html" class="boxXdesc mouseZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Mouse Gamer - Zenit | R$15.99</p>
+                    </div>
+                </a>
+                <a href="./descricaoProduto.html" class="boxXdesc lightbarZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Lightbar - Zenit | R$15.99</p>
+                    </div>
+                </a>
+            </div>
+            <div class="productsContainer">
+                <a href="./descricaoProduto.html" class="boxXdesc headsetZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Headset - Zenit | R$15.99</p>
+                    </div>
+                </a>
+                <a href="./descricaoProduto.html" class="boxXdesc hubZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Hub USB 10-em-1 - Zenit | R$15.99</p>
+                    </div>
+                </a>
+                <a href="./descricaoProduto.html" class="boxXdesc mousepadZenit">
+                    <div class="productsBox"></div>
+                    <div class="productsDescription">
+                        <p>Mousepad - Zenit | R$15.99</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footerImgCopy">
+            <img src="./imagens/logo.png" alt="ZenitTech" width="200px">
+        </section>
+    </footer>
+</body>
+</html>

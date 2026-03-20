@@ -21,15 +21,16 @@ body {
     background-color: #0B0B0B;
 }
 header {
-    position: relative;
+    position: fixed;
     height: 10vh;
     width: 100%;
     border-bottom: 2px solid #222222;
-    background-color: #0d0d0dcc;
+    background-color: #0d0d0d;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #1A1A1A;
+    z-index: 3;
 }
 header a{
     text-decoration: none;
@@ -46,31 +47,35 @@ header a{
     color: #ff0000;
     text-shadow: 0 0 10px #ff000099;
 }
-.ctaContact {
+.navbar {
     display: flex;
-    gap: 1rem;
+    margin-right: 1.5rem;
 }
-.ctaButton {
-    background: Linear-gradient(180deg, #161616 0%, #0D0D0D 100%);
+.navbar ul {
+    display: flex;
+    gap: 3rem;
+}
+.navbar ul li {
+    text-decoration: none;
+    list-style: none;
     color: #E0E0E0;
-    width: 100px;
-    height: 40px;
-    border: 1px solid #ff0000;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: transform 1s ease;
+    font-size: 18px;
+    transition: transform 0.5s ease;
 }
-.ctaButton:hover {
-    transform: translateY(-10px);
-    background: #ff0000cc;
-    box-shadow: 5px 5px 10px #ff0000;
+.navbar ul li:hover {
+    transform: translateY(-5px);
+}
+.icons {
+    display: flex;
+    gap: 1.5rem;
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 95px;
 }
 .hero-zenit {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     min-height: 500px;
     width: 100%;
     display: flex;
@@ -237,7 +242,7 @@ main {
     transform: translateY(-10px);
 }
 .boxXdesc:hover .productsBox {
-    box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.7);
+    box-shadow: 5px 5px 10px #ff0000b3;
 }
 .productsDescription {
     color: #E0E0E0;
@@ -284,6 +289,9 @@ main {
 textarea {
     height: 120px;
     resize: none;
+}
+.contactForm input::placeholder, textarea::placeholder {
+    text-align: center;
 }
 .contactForm button {
     width: 100px;

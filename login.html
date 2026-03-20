@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styleLogin.css">
+    <title>Cadastro - Zenit Tech</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <div class="heroTitle">
+                <img src="./imagens/logoIcon.png" alt="Zenit" width="60px"><h1>Zenit <span style="color: #E0E0E0;">Tech</span></h1>
+            </div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./productsPage.html#products2">Produtos</a></li>
+                <li><a href="./productsPage.html#products">Zenit</a></li>
+                <li><a href="./index.html#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div><a href="#"><img src="./imagens/iconPesquisar.png" alt="Pesquisar" width="25px"></a></div>
+            <div><a href="./login.html"><img src="./imagens/iconUsuarioBranco.png" alt="Login" width="25px"></a></div>
+        </div>
+    </header>
+    <main>
+        <section id="login">
+            <div class="loginForm">
+                <div class="sectionTitle">
+                    <h2>Cadastro</h2>
+                </div>
+                <form action="https://wa.me/5511999999999?text=Gostaria%20de%20mais%20informações" target="_blank">
+                    <div class="group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" placeholder="Nome Completo" id="name" required>
+                    </div>
+                    <div class="group">
+                        <label for="emailForm">Email</label>
+                        <input type="email" placeholder="Email" id="emailForm" required>
+                    </div>
+                    <div class="group">
+                        <label for="numberForm">Número</label>
+                        <input type="tel" placeholder="Número (XX) XXXXX-XXXX" id="numberForm" maxlength="11" pattern="[0-9]{10,11}" inputmode="numeric" title="Apenas números" required>
+                    </div>
+                    <div class="group">
+                        <label for="passwordForm">Senha</label>
+                        <input type="password" placeholder="Senha" id="passwordForm" required minlength="8">
+                    </div>
+                    <div class="group">
+                        <label for="passwordConfirm">Confirmar Senha</label>
+                        <input type="password" placeholder="Confirmar Senha" id="passwordConfirm" required minlength="8">
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                    <div class="textoForm"><p>Já tem uma conta? <a href="./login.html">Login</a></p></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footerImgCopy">
+            <img src="./imagens/logo.png" alt="ZenitTech" width="200px">
+        </section>
+    </footer>
+</body>
+</html>
