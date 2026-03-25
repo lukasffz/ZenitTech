@@ -1,30 +1,18 @@
+<?php
+include 'data.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styleLogin.css">
-    <title>Cadastro - Zenit Tech</title>
+    <title>Cadastro - <?php print $nomeLoja ?></title>
 </head>
 <body>
-    <header>
-        <a href="./index.html">
-            <div class="heroTitle">
-                <img src="./imagens/logoIcon.png" alt="Zenit" width="60px"><h1>Zenit <span style="color: #E0E0E0;">Tech</span></h1>
-            </div>
-        </a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="./productsPage.html#products2">Produtos</a></li>
-                <li><a href="./productsPage.html#products">Zenit</a></li>
-                <li><a href="./index.html#contact">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <div><a href="#"><img src="./imagens/iconPesquisar.png" alt="Pesquisar" width="25px"></a></div>
-            <div><a href="./login.html"><img src="./imagens/iconUsuarioBranco.png" alt="Login" width="25px"></a></div>
-        </div>
-    </header>
+    <?php
+    require './partials/header.php';
+    ?>
     <main>
         <section id="login">
             <div class="loginForm">
@@ -53,15 +41,13 @@
                         <input type="password" placeholder="Confirmar Senha" id="passwordConfirm" required minlength="8">
                     </div>
                     <button type="submit">Cadastrar</button>
-                    <div class="textoForm"><p>Já tem uma conta? <a href="./login.html">Login</a></p></div>
+                    <div class="textoForm"><p>Já tem uma conta? <a href="./login.php">Login</a></p></div>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
-        <section class="footerImgCopy">
-            <img src="./imagens/logo.png" alt="ZenitTech" width="200px">
-        </section>
-    </footer>
+    <?php
+    require './partials/footer.php';
+    ?>
 </body>
 </html>
