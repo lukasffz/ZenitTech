@@ -19,26 +19,26 @@ include 'data.php';
                 <div class="sectionTitle">
                     <h2>Cadastro</h2>
                 </div>
-                <form action="https://wa.me/5511999999999?text=Gostaria%20de%20mais%20informações" target="_blank">
+                <form action="./processa-cadastro.php" method="POST">
                     <div class="group">
                         <label for="name">Nome Completo</label>
-                        <input type="text" placeholder="Nome Completo" id="name" required>
+                        <input type="text" placeholder="Nome Completo" id="name" name="nome" required>
                     </div>
                     <div class="group">
                         <label for="emailForm">Email</label>
-                        <input type="email" placeholder="Email" id="emailForm" required>
+                        <input type="email" placeholder="Email" id="emailForm" name="email" required>
                     </div>
                     <div class="group">
                         <label for="numberForm">Número</label>
-                        <input type="tel" placeholder="Número (XX) XXXXX-XXXX" id="numberForm" maxlength="11" pattern="[0-9]{10,11}" inputmode="numeric" title="Apenas números" required>
+                        <input type="tel" placeholder="Número (XX) XXXXX-XXXX" id="numberForm" maxlength="11" pattern="[0-9]{10,11}" inputmode="numeric" title="Apenas números" name="numero" required>
                     </div>
                     <div class="group">
                         <label for="passwordForm">Senha</label>
-                        <input type="password" placeholder="Senha" id="passwordForm" required minlength="8">
+                        <input type="password" placeholder="Senha" id="passwordForm" name="password" required minlength="8">
                     </div>
                     <div class="group">
                         <label for="passwordConfirm">Confirmar Senha</label>
-                        <input type="password" placeholder="Confirmar Senha" id="passwordConfirm" required minlength="8">
+                        <input type="password" placeholder="Confirmar Senha" id="passwordConfirm" name="passwordConfirm" required minlength="8">
                     </div>
                     <button type="submit">Cadastrar</button>
                     <div class="textoForm"><p>Já tem uma conta? <a href="./login.php">Login</a></p></div>
