@@ -1,5 +1,6 @@
 <?php 
-include 'data.php';
+// include 'data.php';
+require_once 'init.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

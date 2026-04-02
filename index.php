@@ -1,5 +1,6 @@
 <?php
-include 'data.php';
+// include 'data.php';
+require_once 'init.php';
 ?>
 <!--
 include e require chamam um arquivo de fora ou parte de código para o código atual
